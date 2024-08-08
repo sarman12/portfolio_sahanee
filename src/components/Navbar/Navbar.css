@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Permanent+Marker&display=swap');
+.navbar_container{
+    border: 1px solid red;
+    position: fixed;
+    right: 0;
+    left: 0;
+    /* top: 10px; */
+    /* height: 15vh; */
+    padding: 1rem;
+    z-index: 10;
+    background-color: rgb(101, 97, 97);
+}
+.navbar_content{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5rem; */
+
+}
+.navbar_content h1{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 5rem;
+
+}
+.navbar_content nav{
+    margin-right: 50px;
+}
+.navbar_content nav ul{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    gap: 3rem;
+    margin-top: 27px;
+
+}
+.navbar_content nav ul li{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.social{
+    /* border: 1px solid red; */
+    margin-right: 100px;
+    display: flex;
+    gap: 2rem;
+}
+.social .fa{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}

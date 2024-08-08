@@ -1,0 +1,13 @@
+.project_container{
+    z-index: 10;
+        padding: 2rem;
+        /* margin-top: 15vh; */
+        height: 85vh;
+        background-color: #121212;
+        /* Dark background for contrast */
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 100vh;
+        overflow: hidden;
+}
