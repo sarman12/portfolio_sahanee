@@ -22,12 +22,10 @@ function About() {
                     </div>
                 </div>
                 <div className="about_me">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti dolor exercitationem iusto
-                        earum officiis optio harum, nemo minima, voluptatum accusantium iure consequuntur ipsam ut ullam,
-                        quas eveniet non adipisci esse? Sequi consectetur dolore odit nostrum explicabo officiis architecto
-                        veniam.
+                    <p>I am a final-year B.Tech student in Computer Science and Engineering, specializing in web development. With a strong foundation in Data Structures, Algorithms, and Software Engineering, I've built responsive applications using HTML, CSS, JavaScript, and React JS such as a Multi-Purpose App and Gemini Clone,PDF generator, demonstrate my ability to integrate APIs and solve complex problems.
+               I’m continuously expanding my skills in backend technologies like Node.js. I am eager to apply my expertise to new challenges in software development.
                     </p>
-                    <div className="tab-titles">
+                    {/* <div className="tab-titles">
                         <p 
                             className={`tab-links ${activeTab === 'skills' ? 'active-links' : ''}`} 
                             onClick={() => openTab('skills')}
@@ -66,7 +64,7 @@ function About() {
                             <li><span>2019 - 2022 -</span>Completed Diploma in Civil Engineering from AJC Bose Polytechnic College</li>
                             <li><span>Schooling -</span>Completed Schooling from Dhanyakuria High School</li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

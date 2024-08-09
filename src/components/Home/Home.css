@@ -4,222 +4,29 @@
     bottom: 0;
     height: 100vh;
     width: 100%;
-    padding: 2rem;
-    z-index: -10;
-    background: linear-gradient(135deg, #015a5a, #010134);
-
-
-    /* min-height: 100vh;
-        position: relative;
-        display: grid;
-        place-items: center; */
-}
-
-.video-container {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-
-
-}
-
-.home_content {
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(20px);
-    margin: auto;
-    display: flex;
-    margin-top: 17vh;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5rem;
-    padding: 4rem;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-
-.img {
     padding: 3rem;
-    width: 50%;
-    border-radius: 0rem 4rem 4rem 0rem;
-    transition: transform 0.5s ease;
+    z-index: -1;
+    background: linear-gradient(135deg, #015a5a, #010134);
 }
-
-
-
-.home_info {
-    text-align: center;
+.home_content{
+    border: 1px solid red;
+    display: flex;
+    padding: 3rem;
+    margin-top: 15vh;
     
+}
+.home_info{
     width: 50%;
-    padding: 2rem;
-    color: #ecebe8;
-    border-radius: 4rem 0rem 0rem 4rem;
-    /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4); */
-    opacity: 0.9;
-    transition: opacity 0.5s ease;
 }
-
-.home_info:hover {
-    opacity: 1;
+.ho
+.img{
+    width: 50%;
 }
-
-.info {
-    margin-left: 5rem;
-    margin-top: 2rem;
-    padding: 2rem;
-    padding-bottom: 1rem;
-    /* background-color: #2b2b2d; */
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 2s ease-in-out;
+.inner_img{
+    width: 450px;
+    height: 450px;
 }
-
-.info h3 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: hsla(228, 29%, 97%, 0.8);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: slideIn 1.5s ease-in-out;
-}
-
-.info h1 {
-    margin-top: 5px;
-    font-size: 55px;
-    color: #fff;
-    animation: slideIn 1.5s ease-in-out;
-}
-
-.info p {
-    font-size: 22px;
-    color: #ddd;
-    line-height: 1.6;
-    animation: slideIn 2s ease-in-out;
-}
-
-.btn {
-    margin-left: 5rem;
-        /* margin-top: 2rem; */
-        padding: 2rem;
-        border-radius: 15px;
-        display: flex;
-        gap: 1rem;
-        animation: fadeIn 2s ease-in-out;
-}
-
-.btn button {
-    margin: auto;
-    border: 2px solid #fdfcfb;
-    /* background-color: #222; */
-    background-color: transparent;
-    color: #fafaf8;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.6rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-.btn button:hover {
-    background-color: #ffdd57;
-    color: #222;
-    box-shadow: 0 8px 16px rgba(255, 221, 87, 0.5);
-}
-
-.inner_img {
-    overflow-y: hidden;
-    margin: 0px 50px;
-    border: 10px solid #ccc;
-    border-radius: 50%;
-    width: 410px;
+.inner_img div{
     height: 410px;
-    animation: profile__animate 7s infinite ease-in-out;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    
-}
-
-
-
-.inner_img img {
-    transition: transform 0.5s ease-in-out;
     width: 410px;
-        height: 410px;
-    border-radius: 50%;
-}
-.inner_img img:hover {
-    transform: scale(1.1);
-}
-@keyframes profile__animate {
-    0% {
-        border-radius: 50% 50% 45% 55%/55% 45% 55% 45%;
-    }
-
-    25% {
-        border-radius: 45% 55% 50% 50%/50% 50% 55% 45%;
-    }
-
-    50% {
-        border-radius: 55% 45% 50% 50%/50% 55% 45% 55%;
-    }
-
-    75% {
-        border-radius: 50% 50% 55% 45%/45% 55% 50% 50%;
-    }
-
-    100% {
-        border-radius: 50% 50% 45% 55%/55% 45% 55% 45%;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.info p {
-    font-size: 30px;
-    color: #ddd;
-    line-height: 1.6;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: fadeText 3s ease-in-out infinite;
-}
-
-@keyframes fadeText {
-
-    0%,
-    20% {
-        opacity: 0;
-    }
-
-    20%,
-    80% {
-        opacity: 1;
-    }
-
-    80%,
-    100% {
-        opacity: 0;
-    }
 }

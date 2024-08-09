@@ -16,10 +16,6 @@ function Home() {
 
     return (
         <div className="home_container">
-            <video muted autoPlay loop className="video-container">
-                <source src="./video.mp4" type="video/mp4" />
-            </video>
-
             <div className="home_content">
                 <div className="home_info">
                     <div className="info">
@@ -34,7 +30,20 @@ function Home() {
                 </div>
                 <div className="img">
                     <div className="inner_img">
-                        <img src={Photo} alt="Sahanee Arman" />
+                        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                            <iframe 
+                                src="https://giphy.com/embed/SWoSkN6DxTszqIKEqv"
+                                width="100%" 
+                                height="100%" 
+                                style={{ position: 'absolute' }} 
+                                frameBorder="0" 
+                                className="giphy-embed" 
+                                allowFullScreen
+                                title="Giphy Animation"
+                            ></iframe>
+                        </div>
+                        {/* If you want to use the image instead of the GIF, uncomment the line below */}
+                        {/* <img src={Photo} alt="Sahanee Arman" /> */}
                     </div>
                 </div>
             </div>

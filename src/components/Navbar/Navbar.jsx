@@ -9,9 +9,7 @@ function Navbar() {
         <h1>S_arman</h1>
             <nav>
                 <ul>
-                    <li className="home">Home</li>
                     <li className="about">About</li>
-                    <li className="skills">Skills</li>
                     <li className="projects">Projects</li>
                     <li className="contact_us">Contact Us</li>
                 </ul>

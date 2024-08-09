@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Permanent+Marker&display=swap');
 .navbar_container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
     right: 0;
     left: 0;
@@ -8,7 +8,9 @@
     /* height: 15vh; */
     padding: 1rem;
     z-index: 10;
-    background-color: rgb(101, 97, 97);
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(40px);
 }
 .navbar_content{
     display: flex;
