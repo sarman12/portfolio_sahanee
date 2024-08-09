@@ -1,0 +1,29 @@
+footer {
+    background-color: #151515;
+    padding: 2rem 0;
+    color: white;
+    border: 2px red solid;
+}
+
+
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+#go-top a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+#go-top a:hover {
+    color: #FF0077;
+}

@@ -47,7 +47,6 @@
     height: 600px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     object-fit: cover;
-    /* transform: rotate(3deg); */
 }
 
 .project img:hover {
