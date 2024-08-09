@@ -10,7 +10,7 @@ function Navbar() {
             <nav>
                 <ul>
                     <li className="about">About</li>
-                    <li className="projects">Projects</li>
+                    <li className="">Projects</li>
                     <li className="contact_us">Contact Us</li>
                 </ul>
             </nav>

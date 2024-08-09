@@ -15,20 +15,7 @@ function Home() {
   return (
     <div className="home_container">
         <div className="home_content">
-            <div className="home_info">
-                <div className="info">
-                    <p>Hello, I'm</p>
-                    <h1>Sahanee Arman</h1>
-                    <h3>{roles[currentRole]}</h3>
-                </div>
-                <div className="btn">
-                    <button>Download CV</button>
-                    <button>Contact ME</button>
-                </div>
-
-                
-            </div>
-            <div className="img">
+        <div className="img">
                     <div className="inner_img">
                     <div>
                     <iframe 
@@ -44,6 +31,22 @@ function Home() {
 
                     </div>
                 </div>
+            <div className="home_info">
+                <div className="info">
+                    <h1><p style={{fontSize:"80px"}}>{'<'}</p>{'\n\nHello, I\'m '}{' Arman'} <p style={{fontSize:"80px"}}>{'>'}</p>
+                    </h1>
+                        
+                        <h2>{'<I design and develop websites.>'}</h2>
+                        {/* <h3>{roles[currentRole]}</h3> */}
+                </div>
+                <div className="btn">
+                    <button>Download CV</button>
+                    <button>Contact ME</button>
+                </div>
+
+                
+            </div>
+            
         </div>
       
     </div>

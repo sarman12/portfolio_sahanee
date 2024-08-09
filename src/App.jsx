@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home'
-import './App.css'
-import Project from './components/Project/Project'
-import About from './components/About/About'
-function App() {
+import React, { useEffect } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Project from './components/Project/Project';
+import './App.css';
 
+function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Project/>
+      <Navbar />
+      <Home />
+      <About />
+      <Project />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
