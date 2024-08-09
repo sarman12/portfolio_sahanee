@@ -57,12 +57,7 @@
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.about_img:hover {
-    /* transform: scale(1.05); */
-    /* Slight zoom effect */
-    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); */
-    /* Enhance shadow on hover */
-}
+
 
 .about_inner_img {
     overflow: hidden;
