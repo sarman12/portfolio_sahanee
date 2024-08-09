@@ -1,15 +1,25 @@
 footer {
-    background-color: #151515;
+    background-color: #F52549;
     padding: 2rem 0;
     color: white;
-    border: 2px red solid;
+    letter-spacing: 2px;
+    /* border: 2px red ssolid; */
+}
+.col{
+    /* border: 2px red solid; */
+    width: 30%;
+    margin: auto;
+
 }
 
-
-
 .copyright {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 #go-top {
@@ -20,10 +30,10 @@ footer {
 
 #go-top a {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     transition: color 0.3s ease;
 }
 
 #go-top a:hover {
-    color: #FF0077;
+    color: black;
 }

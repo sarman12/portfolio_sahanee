@@ -134,12 +134,14 @@ fieldset{
 
 .contact-info h5 {
     color: #F52549;
-    font-size: 24px;
+    letter-spacing: 2px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .contact-info p{
     letter-spacing:1.4px;
-    font-size: 18px;
+    font-size: 15px;
+    letter-spacing: 2px;
     color: #6d6c6c;
 }
 
