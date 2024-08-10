@@ -3,22 +3,20 @@ footer {
     padding: 2rem 0;
     color: white;
     letter-spacing: 2px;
-    /* border: 2px red ssolid; */
+    text-align: center;
+    /* Center text alignment */
 }
-.col{
-    /* border: 2px red solid; */
+
+.col {
     width: 30%;
     margin: auto;
-
 }
 
 .copyright {
     display: flex;
-    margin: auto;
     justify-content: space-between;
-    
-
-    text-align: center;
+    align-items: center;
+    /* Center items vertically */
     font-size: 1.1rem;
 }
 
@@ -30,10 +28,30 @@ footer {
 
 #go-top a {
     color: white;
-    font-size: 3rem;
-    transition: color 0.3s ease;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Add transform transition */
+    font-weight: 600;
+    animation: bounce 1s infinite;
+    /* Rename animation for clarity */
 }
 
 #go-top a:hover {
-    color: black;
+    color: rgb(205, 192, 14);
+    transform: translateY(-5px);
+    /* Subtle hover effect */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }

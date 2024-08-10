@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Project.css';
 import Gemini from '../../assets/Gemini.png';
 import Multi from '../../assets/multi.png';
@@ -6,6 +6,31 @@ import Recipe from '../../assets/recipe.png';
 import Pdf from '../../assets/pdf.jpg';
 
 function Project() {
+  
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const projects = document.querySelectorAll('.project');
+      const triggerBottom = window.innerHeight / 1.2;
+
+      projects.forEach(project => {
+        const projectTop = project.getBoundingClientRect().top;
+        const projectBottom = project.getBoundingClientRect().bottom;
+
+        if (projectTop < triggerBottom && projectBottom > 0) {
+          project.classList.add('visible');
+        } else {
+          project.classList.remove('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="project_container">
       <div className="project_content">

@@ -92,5 +92,17 @@
 }
 
 .project:hover .project_description {
-    top: 0%;
+    top: -10%;
+}
+
+.project {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: transform 01s ease-out, opacity 0.5s ease-out;
+}
+
+/* Visible state when the project comes into view */
+.project.visible {
+    opacity: 1;
+    transform: scale(1);
 }
