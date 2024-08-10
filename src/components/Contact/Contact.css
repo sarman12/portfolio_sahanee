@@ -1,6 +1,7 @@
 #contact {
-    background: #000000;
+    background: #112C33;
     padding: 100px 0;
+    padding-top: 2rem;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -12,9 +13,10 @@
 }
 
 .section-intro h2 {
-    color: #F52549;
-    font-size: 30px;
+    color: #fffefe;
+    font-size: 40px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .section-intro h1 {
@@ -152,7 +154,7 @@ fieldset{
     width: 30%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: -60px;
+    margin-bottom: -100px;
     
 }
 
@@ -173,10 +175,8 @@ fieldset{
 }
 
 .footer-social li a {
-    /* border: 2px red solid; */
     padding:4px;
     display: inline-block;
-    /* Ensure anchor is treated as a block for transform */
     color: white;
     font-size: 1.5rem;
     transition: color 0.3s ease, transform 0.3s ease;

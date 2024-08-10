@@ -1,12 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import { BiDownArrowAlt } from 'react-icons/bi';
+
+import Main from './components/Main/Main';
 
 function App() {
 
@@ -29,15 +28,8 @@ function App() {
       <div className="fixed_arrow" onClick={scrollToNextSection}>
         <span><BiDownArrowAlt/></span>
       </div>
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Project />
-      </section>
+      
+      <Main/>
       <section id="contact">
         <Contact />
       </section>

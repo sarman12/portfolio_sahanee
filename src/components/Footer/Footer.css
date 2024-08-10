@@ -5,6 +5,8 @@ footer {
     letter-spacing: 2px;
     text-align: center;
     /* Center text alignment */
+    /* border: 2px rgb(236, 215, 215) solid; */
+    margin-top: -80px;
 }
 
 .col {
