@@ -26,10 +26,12 @@ footer {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    z-index: 100;
 }
 
 #go-top a {
-    color: white;
+    
+    color: #112311;
     font-size: 2rem;
     transition: color 0.3s ease, transform 0.3s ease;
     /* Add transform transition */

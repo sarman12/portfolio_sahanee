@@ -19,6 +19,9 @@ function Contact() {
         error: false,
     });
 
+    
+
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -30,7 +33,6 @@ function Contact() {
         e.preventDefault();
         setFormStatus({ loading: true, success: false, error: false });
 
-        // Simulate form submission delay
         setTimeout(() => {
             setFormStatus({ loading: false, success: true, error: false });
             setFormData({
@@ -147,10 +149,10 @@ function Contact() {
 
             <div className="social-contact">
                     <ul className="footer-social">
-                        <li><a href="#"><BsGithub className='fa_contact'/></a></li>
-                        <li><a href="#"><BsLinkedin className='fa_contact'/></a></li>
-                        <li><a href="#"><BsTwitter  className='fa_contact'/></a></li>
-                        <li><a href="#"><BsInstagram className='fa_contact'/></a></li>
+                        <li><a href="https://github.com/sarman12"><BsGithub className='fa_contact'/></a></li>
+                        <li><a href="https://www.linkedin.com/in/s-arman/"><BsLinkedin className='fa_contact'/></a></li>
+                        <li><a href="https://twitter.com/sahanee33743"><BsTwitter  className='fa_contact'/></a></li>
+                        <li><a href="https://www.instagram.com/web_wizard010/#"><BsInstagram className='fa_contact'/></a></li>
                     </ul>
                 </div>
         </section>

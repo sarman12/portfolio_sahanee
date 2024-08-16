@@ -9,14 +9,12 @@
     z-index: 10;
     color: #E0E0E0;
     background-color: #112C33;
-    /* Dark Blue */
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: translate(-50%, -50%);
     margin: auto;
     height: 15.6vh;
     opacity: 0;
     border-bottom: none;
-    /* Remove any existing border */
     clip-path: url(#rounded-bottom);
 }
 
@@ -25,7 +23,6 @@
     opacity: 1;
 }
 
-/* SVG clip-path for rounded bottom border */
 #rounded-bottom {
     position: fixed;
     top: 0;
@@ -48,13 +45,15 @@
 .logo-div {
     position: fixed;
     top: 10px;
-    left: 10%;
+    left: 5%;
     z-index: 10000;
     cursor: pointer;
     overflow: hidden;
     background-color: #FFFFFF;
     /* Dark Blue */
     /* height: 80px; */
+    border: #A8DADC 1px solid;
+    border-radius: 50%;
 }
 
 .logo {
@@ -86,7 +85,6 @@
 
 .nav_menu ul li a {
     color: #F1FAEE;
-    /* Off-White */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -122,20 +120,62 @@
     /* Bright Red */
 }
 
-@media (max-width: 768px) {
-    .nav_menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: rgba(34, 34, 59, 0.9);
-        /* Dark Blue */
-        width: 100%;
-        padding: 1rem;
+
+@media screen and (max-width: 768px) {
+    .navbar_container {
+        /* position: fixed; */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+        transform: translateX(100px);
+        /* width: 40vh; */
+        height: 100vh;
+        left: 80%;
+        clip-path: none;
     }
 
-    .nav_menu.open {
+    .navbar_container.open {
+        transform: translateX(0);
+    }
+    .navbar_content{
+        
         display: flex;
+        flex-direction: column;
+        
+        gap: 22rem;
+    }
+    .nav_menu{
+        margin-top: 30px;
+    }
+
+
+    .nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_menu ul li {
+        width: 100%;
+    }
+
+    .nav_menu ul li a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .social{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+
+   
+    
+
+    .social .fa {
+        font-size: 2rem;
     }
 }

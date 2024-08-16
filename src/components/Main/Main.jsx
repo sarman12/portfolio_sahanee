@@ -6,13 +6,11 @@ import Gemini from '../../assets/Gemini.png';
 import Multi from '../../assets/multi.png';
 import Recipe from '../../assets/recipe.png';
 import Pdf from '../../assets/pdf.jpg';
-
+import '../responsive.css'
+import { BsTwitter,BsFacebook, BsGithub, BsInstagram } from 'react-icons/bs';
+import { LiaLinkedin } from 'react-icons/lia';
 function Main() {
-  const [activeTab, setActiveTab] = useState('skills');
-
-  const openTab = (tabName) => {
-    setActiveTab(tabName);
-  };
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,35 +38,32 @@ function Main() {
 
   return (
     <div>
-      {/* Home Section */}
       <div className="home_container" id='home'>
-        <div className="home_content">
-          <div className="img">
-            <div className="inner_img">
-              <iframe 
-                src="https://giphy.com/embed/SWoSkN6DxTszqIKEqv"
-                className="giphy-embed" 
-                allowFullScreen
-                title="Giphy Animation"
-              ></iframe>
-            </div>
+        <div className="home_info">
+          <div className="info">
+            <h1 className="title">
+              <p className="angle-bracket">{`< Hello, I'm`}</p>
+              <h1 className="name">{'Sahanee Arman />'}</h1>
+            </h1>
+            {/* <h2>{'<I develop websites that leave a lasting impact'}</h2> */}
+            <h3 className="description">
+              Fullstack Developer | Frontend Developer
+            </h3>
           </div>
-          <div className="home_info">
-            <div className="info">
-              <h1>
-                <p className="angle-bracket">{'<'}</p>
-                <p className="greeting">Hello, I&apos;m</p>
-                <h1 className="name">Arman</h1>
-                <p className="angle-bracket-right">{'/>'}</p>
-              </h1>
-              <h2>{'<I develop websites that leave a lasting impact>'}</h2>
-            </div>
-            <div className="btn">
-              <a href={Resume} download className="btn-contact">Download CV</a>
-              <a href="#contact" className="btn-contact">Contact Me</a>
-            </div>
+          <div className="btn">
+            <a href={Resume} download className="btn-contact">Download CV</a>
+            <a href="#contact" className="btn-contact">Contact Me</a>
           </div>
-        </div>
+          </div>
+          <div className="social_div">
+              <BsTwitter className="fa"/>
+              <BsFacebook className="fa"/>
+              <LiaLinkedin className="fa"/>
+              <BsGithub className="fa"/>
+              <BsInstagram className="fa"/>
+
+          </div>
+
       </div>
 
       {/* About Section */}

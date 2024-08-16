@@ -132,10 +132,11 @@ fieldset{
 .contact-info .icon {
     font-size: 35px;
     margin-bottom: 10px;
+    color: #F1EFE2;
 }
 
 .contact-info h5 {
-    color: #F52549;
+    color: #F1EFE2;
     letter-spacing: 2px;
     font-size: 20px;
     margin-bottom: 10px;
@@ -184,7 +185,7 @@ fieldset{
 }
 
 .footer-social li a:hover {
-    color: #F52549;
+    color: #cff3c8;
     transform: rotate(0deg);
     transform: scale(1.1);
 }
