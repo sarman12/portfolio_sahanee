@@ -2,20 +2,17 @@
 
 .navbar_container {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 20px;
+    left: 15%;
     padding: 1rem;
     z-index: 10;
     color: #E0E0E0;
-    background-color: #112C33;
+    background-color: black;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: translate(-50%, -50%);
+    transform: translateY( 0%);
     margin: auto;
-    height: 15.6vh;
     opacity: 0;
     border-bottom: none;
-    clip-path: url(#rounded-bottom);
 }
 
 .navbar_container.open {
@@ -35,43 +32,42 @@
 .navbar_content {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    max-width: 1200px;
-    margin-left: 300px;
-    margin-top: 20px;
 }
 
 .logo-div {
-    position: fixed;
-    top: 10px;
-    left: 5%;
-    z-index: 10000;
-    cursor: pointer;
+    background-color: transparent;
     overflow: hidden;
-    background-color: #FFFFFF;
-    /* Dark Blue */
-    /* height: 80px; */
-    border: #A8DADC 1px solid;
-    border-radius: 50%;
+    position: fixed;
+    top: 30px;
+    left: 15%;
+    z-index: 10000;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    /* border: 2px red solid; */
+    align-items: center;
+    padding: 2rem;
 }
-
 .logo {
-    width: 70px;
-    transform: scale(2);
+    font-size: 2rem;
+    color: #fa05a5;
+    transform: scale(2.5);
 }
 
 .nav_menu {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+    
+    margin: 10px;
+    margin-top: 100px;
 }
 
 .nav_menu ul {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 2rem;
     list-style: none;
-    margin-left: 80px;
     padding: 0;
 }
 
@@ -79,46 +75,24 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #F1FAEE;
-    /* Off-White */
 }
 
 .nav_menu ul li a {
-    color: #F1FAEE;
+    color: aliceblue;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav_menu ul li a:hover {
-    color: #E63946;
+    color: #fa05a5;
     /* Bright Red */
 }
 
 .nav_menu ul li.active a {
-    color: #E63946;
+    color: #fa05a5;
     /* Bright Red */
 }
 
-.social {
-    display: flex;
-    gap: 2rem;
-    height: 5vh;
-}
-
-.social .fa {
-    font-size: 1.5rem;
-    cursor: pointer;
-    transform: rotate(10deg);
-    transition: transform 0.9s ease;
-    color: #A8DADC;
-    /* Light Blue */
-}
-
-.social .fa:hover {
-    transform: rotate(0deg);
-    color: #E63946;
-    /* Bright Red */
-}
 
 
 @media screen and (max-width: 768px) {

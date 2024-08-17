@@ -5,9 +5,10 @@ import { LiaLinkedin } from 'react-icons/lia';
 import { FaHome, FaUser, FaEnvelope } from 'react-icons/fa'; // Import icons for mobile view
 import logo from '../../assets/sahanee_logo.png';
 import '../responsive.css';
+import { BiMenu, BiNavigation, BiX } from 'react-icons/bi';
 
 function Navbar() {
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -34,7 +35,14 @@ function Navbar() {
           <nav className='nav_menu'>
             <ul>
               <li className={activeSection === 'about' ? 'active' : ''}>
+                <a href="#home">{isMobile ? <FaUser /> : 'Home'}</a>
+              </li>
+              
+              <li className={activeSection === 'about' ? 'active' : ''}>
                 <a href="#about">{isMobile ? <FaUser /> : 'About Me'}</a>
+              </li>
+              <li className={activeSection === 'about' ? 'active' : ''}>
+                <a href="#service">{isMobile ? <FaUser /> : 'My Service'}</a>
               </li>
               <li className={activeSection === 'projects' ? 'active' : ''}>
                 <a href="#projects">{isMobile ? <FaHome /> : 'My Work'}</a>
@@ -44,11 +52,6 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          <div className="social">
-            <BsGithub onClick={() => handleSocial('github')} className="fa" />
-            <BsTwitter onClick={() => handleSocial('twitter')} className="fa" />
-            <LiaLinkedin onClick={() => handleSocial('linkedin')} className="fa" />
-          </div>
         </div>
       </div>
       <svg width="0" height="0px">
@@ -62,12 +65,8 @@ function Navbar() {
           </defs>
         </svg>
       <div className="logo-div">
-        <img
-          src={logo}
-          className="logo"
-          onClick={() => setNavOpen(!navOpen)}
-          alt="Logo"
-        />
+        {navOpen? <BiX className="logo" onClick={() => setNavOpen(!navOpen)}/> : <BiMenu className="logo" onClick={() => setNavOpen(!navOpen)}/>}
+              
       </div>
     </>
   );
