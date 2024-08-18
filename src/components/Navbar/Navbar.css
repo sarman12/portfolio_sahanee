@@ -59,7 +59,7 @@
 
 .nav_menu {
     
-    margin: 10px;
+    margin: 20px;
     margin-top: 100px;
 }
 
@@ -85,71 +85,73 @@
 
 .nav_menu ul li a:hover {
     color: #fa05a5;
-    /* Bright Red */
 }
 
 .nav_menu ul li.active a {
     color: #fa05a5;
-    /* Bright Red */
 }
 
-
+@media screen and (max-width: 1180px) {
+    .navbar_container{
+        padding: 0.1rem;
+        padding-bottom: 10px;
+    }
+    .logo-div{
+        padding-left: 1rem;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .nav_menu ul{
+        gap: 1rem;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .navbar_container {
-        /* position: fixed; */
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        padding: 0;
-        transform: translateX(100px);
-        /* width: 40vh; */
-        height: 100vh;
-        left: 80%;
-        clip-path: none;
+        padding: 0.1rem;
     }
 
-    .navbar_container.open {
-        transform: translateX(0);
+    .logo-div {
+        
+        padding: 1rem;
     }
-    .navbar_content{
-        
-        display: flex;
-        flex-direction: column;
-        
-        gap: 22rem;
+
+    .logo {
+        font-size: 1.2rem;
     }
     .nav_menu{
-        margin-top: 30px;
+        margin: 15px;
+        margin-top: 60px;
     }
 
+    .nav_menu ul {
+        gap: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar_container {
+            padding: 1rem;
+        }
+    .logo-div {
+        padding: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav_menu {
+        margin: 0;
+        margin-top: 60px;
+    }
 
     .nav_menu ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        gap: 1rem;
     }
 
     .nav_menu ul li {
-        width: 100%;
-    }
-
-    .nav_menu ul li a {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1.5rem;
-    }
-    .social{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin:20px;
-    }
-
-   
-    
-
-    .social .fa {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }

@@ -6,7 +6,6 @@ import Gemini from '../../assets/Gemini.png';
 import Multi from '../../assets/multi.png';
 import Recipe from '../../assets/recipe.png';
 import Pdf from '../../assets/pdf.jpg';
-import '../responsive.css'
 import { BsTwitter,BsFacebook, BsGithub, BsInstagram, BsCodeSlash, BsUiChecks } from 'react-icons/bs';
 import { LiaLinkedin } from 'react-icons/lia';
 import { FaIdeal, FaUikit } from 'react-icons/fa';
@@ -69,7 +68,7 @@ function Main() {
             <a href="#contact" className="btn-contact">Contact Me</a>
           </div>
           </div>
-          <div className="social_div">
+          <div className="social_div_home">
               <BsTwitter className="fa"/>
               <BsFacebook className="fa"/>
               <LiaLinkedin className="fa"/>
