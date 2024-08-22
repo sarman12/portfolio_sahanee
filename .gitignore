@@ -24,13 +24,6 @@ dist-ssr
 *.sw?
 
 
-node_modules
-public
-package.json
-README.md
-vite.config.js
-package-lock.json
 
-eslint.config.js
 
 
