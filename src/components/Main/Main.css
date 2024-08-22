@@ -7,6 +7,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-y: hidden;
     filter: brightness(0.6), contrast(1.9);
 }
 
