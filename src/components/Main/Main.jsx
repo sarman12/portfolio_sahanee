@@ -71,7 +71,7 @@ function Main({state:dark}) {
               <BsTwitter style={{color: dark? 'white': '#112300'}} className="fa" onClick={()=>window.open("https://x.com/sahanee33743")}/>
               <LiaLinkedin className="fa" style={{color: dark? 'white': '#112300'}} onClick={()=>window.open("https://www.linkedin.com/in/s-arman/")}/>
               <BsGithub className="fa" style={{color: dark? 'white': '#112300'}} onClick={()=>window.open("https://github.com/sarman12")}/>
-              <BsInstagram style={{color: dark? 'white': '#112300'}} className="fa" />
+              <BsInstagram style={{color: dark? 'white': '#112300'}} className="fa" onClick={()=>window.open("https://www.instagram.com/web_wizard010/")} />
 
           </div>
 

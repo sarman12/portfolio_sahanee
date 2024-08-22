@@ -64,7 +64,7 @@ function Contact({ state: dark }) {
                                 onChange={handleChange}
                                 minLength="2"
                                 required
-                                // style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
+                                style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -76,7 +76,7 @@ function Contact({ state: dark }) {
                                 value={formData.contactEmail}
                                 onChange={handleChange}
                                 required
-                                // style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
+                                style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -87,7 +87,7 @@ function Contact({ state: dark }) {
                                 placeholder="Subject"
                                 value={formData.contactSubject}
                                 onChange={handleChange}
-                                // style={{ backgroundColor: dark ? '#333' : '#fff', color: dark ? 'white' : 'black' }}
+                                style={{ color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -100,7 +100,7 @@ function Contact({ state: dark }) {
                                 value={formData.contactMessage}
                                 onChange={handleChange}
                                 required
-                                // style={{ backgroundColor: dark ? '#333' : '#fff', color: dark ? 'white' : 'black' }}
+                                style={{ color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
