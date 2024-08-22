@@ -12,7 +12,7 @@ function Footer() {
                 <div className="col">
                     <div className="copyright">
                         <span>© Copyright 2024 </span> 
-                        <span>Design by Sahanee Arman</span> 
+                        <span>Developed by Sahanee Arman</span> 
                     </div>                      
                 </div>
 

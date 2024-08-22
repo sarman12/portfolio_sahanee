@@ -14,6 +14,12 @@ html {
     overflow-x: hidden;
         
 }
+.body{
+    background-color: #F1EFE2;
+}
+.body_dark{
+    background-color: #112C33;
+}
 h1{
     font-family: "Permanent Marker", cursive;
         font-weight: 600;
@@ -42,36 +48,6 @@ html {
     color: #eeeeee;
 }
 
-/* App.css */
-
-/* Add this section for the scrolling indicator */
-.scroll-indicator {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    /* Height of the line */
-    background-color: red;
-    /* Color of the line */
-    z-index: 9999;
-    /* Ensure it's on top of other elements */
-    transform-origin: 0 0;
-    /* Make sure the line grows from left to right */
-    transition: transform 0.2s ease-out;
-    /* Smooth transition effect */
-}
-
-/* Optional: If you want to have a smooth transition effect */
-.scroll-indicator-active {
-    transform: scaleX(1);
-    /* Full width when active */
-}
-
-.scroll-indicator-inactive {
-    transform: scaleX(0);
-    /* Hidden by default */
-}
 
 @keyframes bounce {
 
@@ -92,4 +68,18 @@ html {
     60% {
         transform: translateY(-5px),scale(1.4);
     }
+}
+
+.dark{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    border-radius: 10% 0% 0px 10%;
+    padding: 0.5rem;
+    background-color: rgb(9, 9, 8);
+}
+.dark svg{
+    font-size: 1.8rem;
+    color: yellow;
+    cursor: pointer;
 }

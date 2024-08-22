@@ -5,7 +5,7 @@ import { BiLocationPlus } from 'react-icons/bi';
 import { IoCall } from 'react-icons/io5';
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
-function Contact() {
+function Contact({ state: dark }) {
     const [formData, setFormData] = useState({
         contactName: '',
         contactEmail: '',
@@ -18,9 +18,6 @@ function Contact() {
         success: false,
         error: false,
     });
-
-    
-
 
     const handleChange = (e) => {
         setFormData({
@@ -45,11 +42,11 @@ function Contact() {
     };
 
     return (
-        <section id="contact">
+        <section id="contact" className={dark ? 'dark-mode' : ''}>
             <div className="section-intro">
-                <h2>Contact</h2>
-                <h1>I'd Love To Hear From You.</h1>
-                <p className="lead">
+                <h2 style={{ color: dark ? '#F1EFE2' : '' }}>Contact</h2>
+                <h1 style={{ color: dark ? '#F1EFE2' : '' }}>I'd Love To Hear From You.</h1>
+                <p className="lead" style={{ color: dark ? '#F1EFE2' : 'black' }}>
                     Let’s get in touch! Feel free to drop me a message.
                 </p>
             </div>
@@ -65,8 +62,9 @@ function Contact() {
                                 placeholder="Your Name"
                                 value={formData.contactName}
                                 onChange={handleChange}
-                                minlength="2"
+                                minLength="2"
                                 required
+                                // style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -78,6 +76,7 @@ function Contact() {
                                 value={formData.contactEmail}
                                 onChange={handleChange}
                                 required
+                                // style={{ backgroundColor: dark ? 'transparent' : 'transparent', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -88,6 +87,7 @@ function Contact() {
                                 placeholder="Subject"
                                 value={formData.contactSubject}
                                 onChange={handleChange}
+                                // style={{ backgroundColor: dark ? '#333' : '#fff', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
@@ -100,10 +100,15 @@ function Contact() {
                                 value={formData.contactMessage}
                                 onChange={handleChange}
                                 required
+                                // style={{ backgroundColor: dark ? '#333' : '#fff', color: dark ? 'white' : 'black' }}
                             />
                         </div>
                         <div className="form-field">
-                            <button className="submitform" type="submit">
+                            <button
+
+                                className={ dark? 'submitform_dark':'submitform'}
+                                type="submit"
+                            >
                                 {formStatus.loading ? 'Sending...' : 'Submit'}
                             </button>
                         </div>
@@ -111,12 +116,12 @@ function Contact() {
                 </form>
 
                 {formStatus.error && (
-                    <div id="message-warning">
+                    <div id="message-warning" style={{ color: dark ? 'red' : 'black' }}>
                         <i className="fa fa-exclamation-triangle"></i> Something went wrong. Please try again.
                     </div>
                 )}
                 {formStatus.success && (
-                    <div id="message-success">
+                    <div id="message-success" style={{ color: dark ? 'green' : 'black' }}>
                         <i className="fa fa-check"></i> Your message was sent, thank you!<br />
                     </div>
                 )}
@@ -125,36 +130,27 @@ function Contact() {
             <div className="contact-info">
                 <div className="info-box">
                     <div className="icon">
-                        <BiLocationPlus/>
+                        <BiLocationPlus style={{ color: dark ? '#F1EFE2' : 'black' }} />
                     </div>
-                    <h5>Where to find me</h5>
-                    <p>DhanyaKuria,Basirhat<br />24 Parganas(N), West Bengal<br />743437, India</p>
+                    <h5 style={{ color: dark ? '#F1EFE2' : 'black' }}>Where to find me</h5>
+                    <p style={{ color: dark ? '#F1EFE2' : 'black' }}>DhanyaKuria,Basirhat<br />24 Parganas(N), West Bengal<br />743437, India</p>
                 </div>
                 <div className="info-box">
                     <div className="icon">
-                        <CgMail/>
+                        <CgMail style={{ color: dark ? '#F1EFE2' : 'black' }} />
                     </div>
-                    <h5>Email Me At</h5>
-                    <p>sahaneearman601@gmail.com</p>
-                    <p>armansahanee@gmail.com</p>
+                    <h5 style={{ color: dark ? '#F1EFE2' : 'black' }}>Email Me At</h5>
+                    <p style={{ color: dark ? '#F1EFE2' : 'black' }}>sahaneearman601@gmail.com</p>
+                    <p style={{ color: dark ? '#F1EFE2' : 'black' }}>armansahanee@gmail.com</p>
                 </div>
                 <div className="info-box">
                     <div className="icon">
-                        <IoCall/>
+                        <IoCall style={{ color: dark ? '#F1EFE2' : 'black' }} />
                     </div>
-                    <h5>Call Me At</h5>
-                    <p>Phone: +91 6294354787</p>
+                    <h5 style={{ color: dark ? '#F1EFE2' : 'black' }}>Call Me At</h5>
+                    <p style={{ color: dark ? '#F1EFE2' : 'black' }}>Phone: +91 6294354787</p>
                 </div>
             </div>
-
-            <div className="social-contact">
-                    <ul className="footer-social">
-                        <li><a href="https://github.com/sarman12"><BsGithub className='fa_contact'/></a></li>
-                        <li><a href="https://www.linkedin.com/in/s-arman/"><BsLinkedin className='fa_contact'/></a></li>
-                        <li><a href="https://twitter.com/sahanee33743"><BsTwitter  className='fa_contact'/></a></li>
-                        <li><a href="https://www.instagram.com/web_wizard010/#"><BsInstagram className='fa_contact'/></a></li>
-                    </ul>
-                </div>
         </section>
     );
 }

@@ -4,7 +4,7 @@
     width: 100%;
     height: 100vh;
     padding: 2rem;
-    background-image: url('../../assets/back.jpg');
+    /* background-image: url('../../assets/back.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,7 +26,7 @@
     animation: animation 1s ease-in-out;
     margin: auto;
     margin-top: 100px;
-    box-shadow: 0px 2px 30px 2px black;
+    /* box-shadow: 0px 2px 30px 2px black; */
 }
 
 .info {
@@ -50,7 +50,8 @@
 }
 
 .name {
-    background: linear-gradient(135deg, #f90663, #fa5bb5);
+    
+    background: linear-gradient(135deg, #06a5fa, #03f3bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -115,7 +116,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #112C33;
 }
 
 .spinner {
@@ -248,8 +248,6 @@
 .about_container {
     padding: 3rem;
     width: 100%;
-    /* min-height: 83vh; */
-    /* background-color: #112C33; */
     color: #F1EFE2;
     letter-spacing: 1.5px;
 }
@@ -333,7 +331,7 @@
 .skills h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #e10f7c;
+    color: #112C33;
 }
 
 .skills p {
@@ -462,7 +460,6 @@
 
 .services_container {
     padding: 60px 20px;
-    background-color: #f9f9f9;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -476,7 +473,7 @@
 
 .services_heading h1 {
     font-size: 2.5rem;
-    color: #330000;
+    color: #112C33;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -565,6 +562,7 @@
 }
 
 .project_heading h1 {
+    color: #112C33;
     text-align: center;
     opacity: 0.9;
     font-weight: 600;
@@ -659,7 +657,7 @@
 
 .project {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .project.visible {
